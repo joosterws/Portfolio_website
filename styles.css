@@ -63,7 +63,7 @@ header{
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+ /* height: 10vh;*/
 }
 
 app-header-buttons{
