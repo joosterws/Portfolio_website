@@ -3,22 +3,22 @@ class NavbarReuse extends HTMLElement{
         this.innerHTML = `
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
             <li>
-                <a href="/">
+                <a href="/index.html">
                     Home
                 </a>
             </li>
             <li>
-                <a href="HU_projects.html">
+                <a href="/HU_projects.html">
                     HU projects
                 </a>
             </li>
             <li>
-                <a href="my_history.html">
+                <a href="/my_history.html">
                     My history
                 </a>
             </li>
             <li>
-                <a href="SelfHosted/SelfHosted.html">
+                <a href="/SelfHosted/SelfHosted.html">
                     SelfHosted
                 </a>
             </li>
@@ -34,9 +34,9 @@ class SidebarReuse extends HTMLElement{
         this.innerHTML = `
             <ul class="SideList">
                 <li>These are temporary placeholders.</li>
-                <li><a href="https://www.facebook.com"><img src="images/Social-SVG/facebook.svg" alt="Facebook icon"></a></li>
-                <li><a href="https://www.twitter.com"><img src="images/Social-SVG/twitter.svg"alt="Twitter icon"></a></li>
-                <li><a href="https://www.instagram.com"><img src="images/Social-SVG/instagram.svg"alt="Instagram icon"></a></li>
+                <li><a href="https://www.facebook.com"><img src="/images/Social-SVG/facebook.svg" alt="Facebook icon"></a></li>
+                <li><a href="https://www.twitter.com"><img src="/images/Social-SVG/twitter.svg"alt="Twitter icon"></a></li>
+                <li><a href="https://www.instagram.com"><img src="/images/Social-SVG/instagram.svg"alt="Instagram icon"></a></li>
             </ul>`
     }
 }
@@ -61,9 +61,10 @@ class FooterReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/Social-SVG/facebook.svg" alt="Facebook icon" style="width:24px;height:24px"></a>
-            <a href="https://www.twitter.com"><img src="images/Social-SVG/twitter.svg"alt="Twitter icon" style="width:24px;height:24px"></a>
-            <a href="https://www.instagram.com"><img src="images/Social-SVG/instagram.svg"alt="Instagram icon" style="width:24px;height:24px"></a>
+            <a href="https://www.facebook.com"><img src="/images/Social-SVG/facebook.svg" alt="Facebook icon" style="width:24px;height:24px"></a>
+            <a href="https://www.twitter.com"><img src="/images/Social-SVG/twitter.svg" alt="Twitter icon" style="width:24px;height:24px"></a>
+            <a href="https://www.instagram.com"><img src="/images/Social-SVG/instagram.svg" alt="Instagram icon" style="width:24px;height:24px"></a>
+            <a href="https://www.linkedin.com/"><img src="/images/Social-SVG/linkedin.svg" alt="Linkedin icon" style="width:24px;height:24px"></a>
         </div>
         <a href="cookies-policy.html">
             Cookies policy

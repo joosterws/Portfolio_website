@@ -44,6 +44,7 @@ p {
 .darkmode{
   --text-color: rgb(228, 228, 228);
   --background-color: rgb(56, 56, 61);
+  --social-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(454%) hue-rotate(356deg) brightness(84%) contrast(115%);
 }
 .center_image{
   display: block;
@@ -150,6 +151,7 @@ footer a:hover{
 
 .social-links{
   text-align: center;
+  filter: var(--social-filter);
 }
 
 

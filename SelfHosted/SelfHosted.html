@@ -4,50 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event!</title>
+    <title>Joost Sluijmer</title>
     <link rel="icon" href="images\Tab-Icons\JS-icon.png"/>
-    <link rel="stylesheet" href="styles.css">
-    <script src="Reuse.js"></script> 
-    <script src="mobile-nav-button.js" defer></script>
-    <script src="darkmode.js" defer></script> 
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/Reuse.js"></script> 
+    <script src="/mobile-nav-button.js" defer></script>
+    <script src="/darkmode.js" defer></script> 
 </head>
 
 <body>
     <header>
         <div>
-            <h1>My selfhosted journey</h1>
+            <h1>Joost Sluijmer</h1>
         </div>
         <app-header-buttons></app-header-buttons>
     </header>
-    
-    <!-- Navigation bar: For the same navbar on all pages.-->
+
+    <!-- Navigation bar: For the same navbar on all pages. Defined in Reuse.js-->
     <nav>
         <app-navbar></app-navbar>
     </nav>
-
+    
     <main>
-        <div class="article-text">
-            <!-- <h4>Independance</h4> -->
-            This website is to demonstrate how I have made the virtual part of my life more independant of big businesses, subscriptions and to make it easier to use.
-        </div>
         
         <article>
+            <!-- <h4>Independance</h4> -->
+            This website is to demonstrate how I have made the virtual part of my life more independant of big businesses, subscriptions and to make it easier to use.
             <div class="article-title">
-                <h2><a href="/SelfHosted/unRaid.html">unRAID</a></h2>
+                <h2><a href="../SelfHosted/unRaid.html">unRAID</a></h2>
                 <div class="article-info">
                     <h3>My homemade NAS with parity, docker, VMs and gameservers.</h3>
                     <div class="article-text">
                         Enter text here!
                     </div>
                 </div>
-                <h2><a href="/SelfHosted/NextCloud.html">NextCloud</a></h2>
+                <h2><a href="../SelfHosted/NextCloud.html">NextCloud</a></h2>
                 <div class="article-info">
                     <h3>My personal cloud for anything from documents to video's.</h3>
                     <div class="article-text">
                         Enter text here!
                     </div>
                 </div>
-                <h2><a href="/SelfHosted/HomeAssistant.html">HomeAssistant</a></h2>
+                <h2><a href="../SelfHosted/HomeAssistant.html">HomeAssistant</a></h2>
                 <div class="article-info">
                     <h3>How I link all my different smart electronics together.</h3>
                     <div class="article-text">
@@ -61,11 +59,12 @@
         </div>
 
     </main>
-
     <footer>
         <app-footer></app-footer>
     </footer>
-
+    
+    <!-- <script src="./mobile-nav-button.js" defer></script> 
+    <script src="./darkmode.js" defer></script> -->
 
 </body>
 </html>
