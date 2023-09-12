@@ -22,21 +22,6 @@ class NavbarReuse extends HTMLElement{
                     SelfHosted
                 </a>
             </li>
-            // <li>
-            //     <a href="/SelfHosted/unRaid.html">
-            //         unRAID
-            //     </a>
-            // </li>
-            // <li>
-            //     <a href="/SelfHosted/NextCloud.html">
-            //         NextCloud
-            //     </a>
-            // </li>
-            // <li>
-            //     <a href="/SelfHosted/HomeAssistant.html">
-            //         HomeAssistant
-            //     </a>
-            // </li>
         </ul>`
     }
 }
