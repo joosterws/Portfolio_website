@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event!</title>
+    <link rel="icon" href="../images\Tab-Icons\JS-icon.png"/>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../Reuse.js"></script> 
+    <script src="../mobile-nav-button.js" defer></script>
+    <script src="../darkmode.js" defer></script> 
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Event!</h1>
+        </div>
+        <app-header-buttons></app-header-buttons>
+    </header>  
+
+    <!-- Navigation bar: For the same navbar on all pages.-->
+    <nav>
+        <div class="container">
+            <app-navbar></app-navbar>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <div class="article-title">
+                <h2>Welcome to the event page!</h2>
+                <div class="article-info">
+                <h3>Info about the event:</h3>
+                    <div class="article-text">
+                        <div>Event info.</div>
+                        <ul class="SideList">
+                            <li>Date:</li>
+                            <li></li>
+                            <li>Time:</li>
+                            <li></li>
+                            <li>Location:</li>
+                            <li></li>
+                            <li>Organizer:</li>
+                            <li></li>                                
+                            <li>Navigation link:</li>
+                            <li></li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>  
+        </article>
+        <div class="side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+    </main>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+</body>
+</html>

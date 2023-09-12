@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Nextcloud</title>
+    <link rel="icon" href="../images\Tab-Icons\JS-icon.png"/>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../Reuse.js"></script> 
+    <script src="../mobile-nav-button.js" defer></script>
+    <script src="../darkmode.js" defer></script> 
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Next Cloud</h1>
+        </div>
+        <app-header-buttons></app-header-buttons>
+    </header>
+    
+    <!-- Navigation bar: For the same navbar on all pages.-->
+    <nav>
+        <app-navbar></app-navbar>
+    </nav>
+
+    <main>
+        <article>
+            <div class="article-title">
+                <h2>My personal cloud for anything from documents to video's.</h2>
+                <div class="article-info">
+                    <h3>Sync everything!</h3>
+                    <div class="article-text">
+                        <h4>The basics</h4>
+                        Nextcloud is a cloudservice just like Google Drive, OneDrive and iCloud etc. The big difference is that this cloud is not hosted in someone else's datacenter. This cloud is hosted by you, controlled by you and free to use.
+                        
+                        <h4>Crucial features</h4>
+                        Nextcloud has all the features I deem necessary in a cloud backup enviroment. There are desktop and mobile applications so you can synchronize all your devices.
+                        I use this on my desktops so all my crucial files and folder are synced between all my devices. The files get uploaded, downloaded and updated to all the devices and the server whenever the devices have an internet connection.
+                        On my mobile device it synchronizes the camera gallery to Nextcloud. This way I don't have to worry about my precious memories getting lost if something happens to my phone.
+                        <h4>Administrator features</h4>
+                        <div class="dashed_items">- Two-factor verification</div> 
+                        I have enabled this like I believe everybody should do with as much as possible.
+                        <div class="dashed_items">-Email notifications</div> 
+                        To make sure NextCloud stays up to date for the best security practice it sends an email whenever there is an update.
+
+                        <h4>Additional features</h4>
+                            NextCloud has an apps feature which allows you to add a lot of things.
+                            Some things I added and use regularly:
+                        <ul>
+                            <li>Maps, to see the location of contacts and where pictures were taken.</li>
+                            <li>Talk, similar to MS Teams to communicate with people.</li>
+                            <li>Notes, a simple and convenient note taking app for anything from groceries to development tasks.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>  
+        </article>
+        <div class="side-bar">
+            <app-sidebar></app-sidebar>
+        </div>
+
+    </main>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+
+</body>
+</html>
