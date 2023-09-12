@@ -8,17 +8,17 @@ class NavbarReuse extends HTMLElement{
                 </a>
             </li>
             <li>
-                <a href="/HU_projects.html">
+                <a href="HU_projects.html">
                     HU projects
                 </a>
             </li>
             <li>
-                <a href="/my_history.html">
+                <a href="my_history.html">
                     My history
                 </a>
             </li>
             <li>
-                <a href="/SelfHosted/SelfHosted.html">
+                <a href="SelfHosted/SelfHosted.html">
                     SelfHosted
                 </a>
             </li>
@@ -27,30 +27,6 @@ class NavbarReuse extends HTMLElement{
 }
 customElements.define('app-navbar', NavbarReuse);
 
-// nav 1, 2 and 3 alternative
-// <li>
-//                 <a href="/">
-//                     Home
-//                 </a>
-//             </li>
-//             <li>
-//                 <a href="/nav1.html">
-//                     Nav 1</a></li>
-//             <li>
-//                 <a href="/nav2.html">
-//                     Nav 2
-//                 </a>
-//             </li>
-//             <li>
-//                 <a href="/nav3.html">
-//                     Nav 3
-//                 </a>
-//             </li>
-//             <li>
-//                 <a href="/SelfHosted/SelfHosted.html">
-//                     SelfHosted
-//                 </a>
-//             </li>
 
 
 class SidebarReuse extends HTMLElement{
@@ -58,9 +34,9 @@ class SidebarReuse extends HTMLElement{
         this.innerHTML = `
             <ul class="SideList">
                 <li>These are temporary placeholders.</li>
-                <li><a href="https://www.facebook.com"><img src="../images/Social-SVG/facebook.svg" alt="Facebook icon"></a></li>
-                <li><a href="https://www.twitter.com"><img src="../images/Social-SVG/twitter.svg"alt="Twitter icon"></a></li>
-                <li><a href="https://www.instagram.com"><img src="../images/Social-SVG/instagram.svg"alt="Instagram icon"></a></li>
+                <li><a href="https://www.facebook.com"><img src="images/Social-SVG/facebook.svg" alt="Facebook icon"></a></li>
+                <li><a href="https://www.twitter.com"><img src="images/Social-SVG/twitter.svg"alt="Twitter icon"></a></li>
+                <li><a href="https://www.instagram.com"><img src="images/Social-SVG/instagram.svg"alt="Instagram icon"></a></li>
             </ul>`
     }
 }
@@ -85,9 +61,9 @@ class FooterReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="../images/Social-SVG/facebook.svg" alt="Facebook icon" style="width:24px;height:24px"></a>
-            <a href="https://www.twitter.com"><img src="../images/Social-SVG/twitter.svg"alt="Twitter icon" style="width:24px;height:24px"></a>
-            <a href="https://www.instagram.com"><img src="../images/Social-SVG/instagram.svg"alt="Instagram icon" style="width:24px;height:24px"></a>
+            <a href="https://www.facebook.com"><img src="images/Social-SVG/facebook.svg" alt="Facebook icon" style="width:24px;height:24px"></a>
+            <a href="https://www.twitter.com"><img src="images/Social-SVG/twitter.svg"alt="Twitter icon" style="width:24px;height:24px"></a>
+            <a href="https://www.instagram.com"><img src="images/Social-SVG/instagram.svg"alt="Instagram icon" style="width:24px;height:24px"></a>
         </div>
         <a href="cookies-policy.html">
             Cookies policy
