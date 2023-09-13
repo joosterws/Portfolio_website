@@ -261,6 +261,7 @@ footer a:hover{
     background: rgb(145, 145, 145);
     transform: translateX(100%);
     transition: transform 350ms ease-out;
+    box-shadow: none;
   }
 
 /* Just incase a browser doesn't support backdrop filters the standard is shown above. This is for if it is supported. */
