@@ -80,7 +80,7 @@ p {
 header{
   display: grid;
   grid-template-columns: auto auto;
-  box-shadow: 0 0 5px 0 var(--shadow-color);;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
   border-radius: 0 0 0.75rem 0.75rem;
   padding: 1rem;
   align-items: center;
@@ -213,12 +213,15 @@ article{
   display: grid;
   gap: var(--spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 40%;
+  grid-auto-columns: 45%;
   padding: 0 var(--spacer) var(--spacer);
   overflow-x: auto;
   overflow: auto;
   overscroll-behavior-inline: contain;
   max-width: 100%;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
+  padding: 2rem;
+  border-radius: 0.75rem;
 }
 
 .media-element {
@@ -332,7 +335,7 @@ footer a:hover{
     }
   .media-scroller {
     padding: 0;
-    grid-auto-columns: 80%;
+    grid-auto-columns: 85%;
     }
   .media-element {
     padding: 0;
