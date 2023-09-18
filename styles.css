@@ -160,7 +160,7 @@ app-header-buttons{
   z-index: 90;
   max-height: 0;
   min-width: 100px;
-  transition: max-height 0.15s ease-out;
+  transition: max-height 0.3s ease-out;
   overflow: hidden;
 }
 
@@ -180,7 +180,7 @@ app-header-buttons{
 .dropdown:hover .dropdown-content {
   max-height: 500px;
   min-width: 160px;
-  transition: max-height 0.25s ease-in;
+  transition: max-height 0.3s ease-in;
 }
 
 /* .dropdown:hover .dropbtn {
@@ -205,7 +205,6 @@ border-radius: 0.75rem;
 }
 .side-bar ul {
   list-style-type: none;
-  /* padding: 0; */
   padding-left: 1rem;
   padding-right: 1rem;
 }
