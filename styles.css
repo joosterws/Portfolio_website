@@ -97,6 +97,7 @@ app-header-buttons{
 
 .mobile-nav-toggle{
   display: none;
+  filter: var(--social-filter);
 }
 
 .dark-mode-toggle{
@@ -107,6 +108,7 @@ app-header-buttons{
   cursor: pointer;
   align-items: center;
   justify-items: right;
+  filter: var(--social-filter);
 }
 
 .primary-navigation{

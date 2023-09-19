@@ -48,11 +48,11 @@ class HeaderButtonsReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <button id="dark-mode-toggle" class="dark-mode-toggle">
-            <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+            <img src="/images/Sun.svg" alt="Menu" style="width:30px;height:30px">
         </button>
 
         <button id="mobile-nav-toggle" class="mobile-nav-toggle">
-            <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/></svg>
+            <img src="/images/Burger-menu.svg" alt="Menu" style="width:30px;height:30px">
         </button>
         `
     }
