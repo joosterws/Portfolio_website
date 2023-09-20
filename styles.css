@@ -8,7 +8,7 @@
   /* var(--shadow-color); */
   --shadow-color-dropdown: rgba(0, 0, 0, 0.5);
   /* max-width: var(--max-page-width); */
-  --box-shadow-radius:  0.5rem;
+  --box-shadow-radius:  0.3rem;
 }
 
 /* html{
@@ -236,6 +236,7 @@ margin-bottom: 1rem;
   gap: var(--spacer);
   grid-auto-flow: column;
   grid-auto-columns: 45%;
+  margin: 1rem 0 0 0;
   padding: 0 var(--spacer) var(--spacer);
   overflow-x: auto;
   overflow: auto;
@@ -298,7 +299,7 @@ footer a:hover{
   filter: var(--social-filter);
 }
 
-
+/* This layout gets used when the device viewed on is less than 35em wide */
 @media (max-width: 35em){
   header{
     display: grid;
@@ -333,7 +334,6 @@ footer a:hover{
       background: rgba(145, 145, 145, 0.1);
       backdrop-filter: blur(1rem);
       -webkit-backdrop-filter: blur(1rem); /* Add this line first, it fixes blur for Safari*/
-
     }
   }
 
