@@ -237,13 +237,13 @@ margin-bottom: 1rem;
   grid-auto-flow: column;
   grid-auto-columns: 45%;
   margin: 1rem 0 0 0;
-  padding: 0 var(--spacer) var(--spacer);
+  /* padding: 0 var(--spacer) var(--spacer); */
+  padding: var(--spacer);
   overflow-x: auto;
   overflow: auto;
   overscroll-behavior-inline: contain;
   max-width: 100%;
   box-shadow: 0 0 5px 0 var(--shadow-color);
-  padding: 2rem;
   border-radius: var(--box-shadow-radius);
 }
 
@@ -299,6 +299,11 @@ footer a:hover{
   filter: var(--social-filter);
 }
 
+@media (max-width: 23em){
+  body{
+    padding: 0 0.5em;
+  }
+}
 /* This layout gets used when the device viewed on is less than 35em wide */
 @media (max-width: 35em){
   header{
@@ -357,11 +362,10 @@ footer a:hover{
     display: none;
     }
   .media-scroller {
-    padding: 0;
+    padding: 1rem;
     grid-auto-columns: 85%;
     }
   .media-element {
-    padding: var(--spacer);
     gap: 0;
   }
 }
