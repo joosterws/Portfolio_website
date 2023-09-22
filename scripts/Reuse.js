@@ -59,6 +59,7 @@ class HeaderButtonsReuse extends HTMLElement{
 }
 customElements.define('app-header-buttons', HeaderButtonsReuse);
 
+
 class FooterReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `

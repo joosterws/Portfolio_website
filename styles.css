@@ -9,6 +9,7 @@
   --shadow-color-dropdown: rgba(0, 0, 0, 0.5);
   /* max-width: var(--max-page-width); */
   --box-shadow-radius:  0.3rem;
+  --scroll-btn-background: rgb(110, 110, 110);
 }
 
 /* html{
@@ -297,6 +298,27 @@ footer a:hover{
 .social-links{
   text-align: center;
   filter: var(--social-filter);
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--scroll-btn-background);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10rem;
+}
+#scrollBtn > img {
+  display:block;
+}
+#scrollBtn:hover {
+  background-color: #555;
 }
 
 @media (max-width: 23em){
