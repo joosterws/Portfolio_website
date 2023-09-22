@@ -266,7 +266,7 @@ margin-bottom: 1rem;
 
 .side-bar{
 padding-top: 2rem;
-box-shadow: 0 0 5px 0 var(--shadow-color);;
+box-shadow: 0 0 5px 0 var(--shadow-color);
 border-radius: var(--box-shadow-radius);
 }
 .side-bar ul {
@@ -277,7 +277,7 @@ border-radius: var(--box-shadow-radius);
 }
 
 footer{
-  box-shadow: 0 0 5px 0 var(--shadow-color);;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
   border-radius: var(--box-shadow-radius) var(--box-shadow-radius) 0 0;
   color: var(--text-color);
   text-align: center;
@@ -313,6 +313,7 @@ footer a:hover{
   cursor: pointer;
   padding: 8px;
   border-radius: 10rem;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
 }
 #scrollBtn > img {
   display:block;
