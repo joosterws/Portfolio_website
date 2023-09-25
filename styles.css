@@ -62,7 +62,6 @@ p {
 
 .darkmode{
   --text-color: rgba(228, 228, 228, 0.952);
-  /* --background-color: rgb(56, 56, 61); */
   --background-color: #222;
   --social-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(454%) hue-rotate(356deg) brightness(84%) contrast(115%);
   --shadow-color: rgba(0, 255, 255, 0.666);
@@ -130,9 +129,6 @@ app-header-buttons{
   color: var(--text-color);
 }
 
-/* .primary-navigation a:hover{
-  text-decoration: underline var(--text-color);
-} */
 
 .primary-navigation li a::after{
   content: '';
@@ -149,22 +145,11 @@ app-header-buttons{
   z-index: 99;
 }
 
-/* .dropbtn {
-  background-color: #f9f9f9;
-  color: #0f0f0f;
-  padding: 8px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-} */
 
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   position: absolute;
   left: 50%;
@@ -181,7 +166,6 @@ app-header-buttons{
   /* This is the new added section to align the drop down on the right. */
   text-align:center!important;
 }
-
 .dropdown-content a {
   color: var(--text-color);
   background-color: var(--background-color);
@@ -190,38 +174,12 @@ app-header-buttons{
   display: block;
   margin: 0;
 }
-
-/*  copy of the underline test for dropdown only
-.dropdown-content a::after{
-  content: '';
-  height: 3px;
-  width: 100%;
-  background: rgb(0, 183, 255);
-  display: block;
-  position: relative;
-  opacity: 0;
-  transition: all 0.2s;
-}
-.dropdown-content a:hover::after{
-  opacity: 1;
-  z-index: 99;
-} */
-
-/* .dropdown-content a:hover {
-  background-color: #e2e2e2;
-} */
-
 .dropdown:hover .dropdown-content {
   max-height: 500px;
   min-width: 160px;
   transition: max-height 0.3s ease-in;
 }
 
-/* .dropdown:hover .dropbtn {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e0e0e0;
-  transition: max-height 0.25s ease-in;
-} */
 
 main{
 display: grid;
@@ -252,9 +210,6 @@ margin-bottom: 1rem;
 .media-element {
   display: grid;
   grid-template-rows: min-content;
-  /* gap: var(--spacer); */
-  /* padding: var(--spacer); */
-  /* background: var(--spacer); */
   border-radius: var(--spacer);
   box-shadow: var(--spacer);
 }
