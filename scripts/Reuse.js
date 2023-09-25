@@ -66,7 +66,7 @@ class FooterReuse extends HTMLElement{
         <div class="social-links">
             <a href="https://www.linkedin.com/in/joost-sluijmer/" target="_blank"><img src="/images/Social-SVG/linkedin.svg" title="Linkedin" alt="Linkedin icon" style="width:24px;height:24px"></a>
             <a href="https://github.com/joosterws" target="_blank"><img src="/images/Social-SVG/github.svg"  title="Github" alt="Github icon" title="Linkedin" style="width:24px;height:24px"></a>
-            <a href="" target="_blank"><img src="/images/Social-SVG/at.svg" title="Email" alt="Email contact" style="width:24px;height:24px"></a>
+            <a href="/contact.html" ><img src="/images/Social-SVG/at.svg" title="Email" alt="Email contact" style="width:24px;height:24px"></a>
 
         </div>
         <!-- <a href="cookies-policy.html">

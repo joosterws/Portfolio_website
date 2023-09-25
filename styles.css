@@ -33,7 +33,7 @@ body {
   /* background-image: linear-gradient(to right,#00ffc8, rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), #00ffc8); */
   /* box-shadow: 1rem 15px 150px 150px #00ffc8; */
   /* outline: #00aeff solid 1000px; */
-  /* cool teal kinda color#00ffc8 */
+  /* cool teal kinda color #00ffc8 */
 }
 
 h1 {
@@ -113,6 +113,7 @@ app-header-buttons{
 }
 
 .primary-navigation{
+  /* position: fixed; */
   position: relative;
   list-style: none;
   padding: 1rem 7vw 0 7vw ;
@@ -356,6 +357,10 @@ footer a:hover{
     box-shadow: none;
   }
 
+  .primary-navigation li a::after{
+    display: none;
+  }
+
 /* Just incase a browser doesn't support backdrop filters the standard is shown above. This is for if it is supported. */
   @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation{
@@ -367,6 +372,10 @@ footer a:hover{
 
   .primary-navigation[data-visible="true"] {
     transform: translateX(0%);
+  }
+
+  .dropdown-content {
+    display: none;
   }
 
   .mobile-nav-toggle{
