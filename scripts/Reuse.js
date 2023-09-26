@@ -15,11 +15,11 @@ class NavbarReuse extends HTMLElement{
             <li>
                 <div class="dropdown">
                     <a href="/SelfHosted/SelfHosted.html">Self Hosted</a>
-                        <div class="dropdown-content">
-                            <a href="/SelfHosted/unRaid.html">Unraid</a>
-                            <a href="/SelfHosted/NextCloud.html">Nextcloud</a>
-                            <a href="/SelfHosted/HomeAssistant.html">HomeAssistant</a>
-                        </div>
+                    <div class="dropdown-content">
+                        <a href="/SelfHosted/unRaid.html">Unraid</a>
+                        <a href="/SelfHosted/NextCloud.html">Nextcloud</a>
+                        <a href="/SelfHosted/HomeAssistant.html">HomeAssistant</a>
+                    </div>
                 </div>
             </li>
         </ul>
