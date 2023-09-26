@@ -1,7 +1,7 @@
 class NavbarReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-        
+        <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
             <li>
                 <a href="/index.html">Home</a>
@@ -23,6 +23,7 @@ class NavbarReuse extends HTMLElement{
                 </div>
             </li>
         </ul>
+        </nav>
         `
     }
 }
