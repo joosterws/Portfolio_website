@@ -115,7 +115,7 @@ app-header-buttons{
   /* position: fixed; */
   position: relative;
   list-style: none;
-  padding: 1rem 7vw 0 7vw ;
+  padding: 1rem 7vw 1rem 7vw ;
   margin: 1rem 0;
   box-shadow: 0 0 5px 0 var(--shadow-color);;
   border-radius: var(--box-shadow-radius);
@@ -123,10 +123,18 @@ app-header-buttons{
   justify-content: space-between;
 }
 
-.primary-navigation a{
+/* .primary-navigation li{
+  text-align: center;
+} */
+
+.primary-navigation li a{
+  display: block;
   margin: 0 1rem;
   text-decoration: none;
   color: var(--text-color);
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 

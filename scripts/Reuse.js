@@ -1,6 +1,7 @@
 class NavbarReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
+        
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
             <li>
                 <a href="/index.html">Home</a>
