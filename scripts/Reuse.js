@@ -18,7 +18,7 @@ class NavbarReuse extends HTMLElement{
                     <div class="dropdown-content">
                         <a href="/SelfHosted/unRaid.html">Unraid</a>
                         <a href="/SelfHosted/NextCloud.html">Nextcloud</a>
-                        <a href="/SelfHosted/HomeAssistant.html">HomeAssistant</a>
+                        <a href="/SelfHosted/HomeAssistant.html">Home Assistant</a>
                     </div>
                 </div>
             </li>
@@ -50,7 +50,7 @@ class HeaderButtonsReuse extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <button id="dark-mode-toggle" class="dark-mode-toggle">
-            <img src="/images/Sun.svg" title="Dark mode" alt="Dark Mode" style="width:30px;height:30px">
+            <img src="/images/dark-theme.svg" title="Dark mode" alt="Dark Mode" style="width:30px;height:30px">
         </button>
 
         <button id="mobile-nav-toggle" class="mobile-nav-toggle">

@@ -11,7 +11,9 @@
   --box-shadow-radius:  0.3rem;
   --scroll-btn-background: rgb(110, 110, 110);
 }
+/*      Z-index table
 
+*/
 /* html{
 } */
 
@@ -64,8 +66,10 @@ p {
   --text-color: rgba(228, 228, 228, 0.952);
   --background-color: #222;
   --social-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(454%) hue-rotate(356deg) brightness(84%) contrast(115%);
-  --shadow-color: rgba(0, 255, 255, 0.666);
-  --shadow-color-dropdown: rgba(0, 255, 255, 0.333);
+  /* --shadow-color: rgba(0, 255, 255, 0.666); */
+  --shadow-color: rgb(126, 126, 126);
+  /* --shadow-color-dropdown: rgba(0, 255, 255, 0.333); */
+  --shadow-color-dropdown: rgba(126, 126, 126, 0.333);
 }
 
 .center_image{
@@ -115,7 +119,7 @@ app-header-buttons{
 nav{
   position: sticky;
   top: 0;
-  z-index: 10000000;
+  z-index: 9998;
 }
 .primary-navigation{
   background: var(--background-color);
@@ -286,6 +290,7 @@ footer a:hover{
   padding: 8px;
   border-radius: 10rem;
   box-shadow: 0 0 5px 0 var(--shadow-color);
+  z-index: 9999;
 }
 #scrollBtn > img {
   display:block;
