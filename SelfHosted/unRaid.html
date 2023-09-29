@@ -71,14 +71,19 @@
 
                         <h4>Docker</h4>
                         I run a lot of docker containers for ease of use. A couple examples and their use cases:
-                        <div class="dashed_items">- NGINX and nginx proxy manager (NPM)</div> 
+                        
+                        <br>
+                        <br><div class="dashed_items">- NGINX and nginx proxy manager (NPM)</div> 
                         To host this and some other websites I use nginx. To send visitors to the correct website and docker container I use NPM to route the incomming traffic. Inside NPM you can add domains and the location they need to point to, like a local IP and port.
-                        <div class="dashed_items">- Cloudflare tunnel</div> 
+                        <br>
+                        <br><div class="dashed_items"> - Cloudflare tunnel</div> 
                         To make sure there is a secure connectiong without portforwarding I use a Cloudflare tunnel. 
                         This will send users that navigate to this website to my UNRAID box where NPM will send it to the correct container.
-                        <div class="dashed_items">- Nextcloud</div> 
+                        <br>
+                        <br><div class="dashed_items"> - Nextcloud</div> 
                         My Nextcloud also runs in docker. You can read more about this on the dedicated page for Nextcloud.
-                        <div class="dashed_items">-Game servers</div> 
+                        <br>
+                        <br><div class="dashed_items">- Game servers</div> 
                         For the occasional time my friends would like to play a multiplayer game in a private enviroment I host them and many of them through Docker.
                         To allow people from anywhere to access my servers I route it via cloudflare DNS pointing it towards a DDNS that points to my home IP adress. The SRV record including the appropriate port points towards the CNAME record which points towards the DDNS.
                         
