@@ -1,0 +1,407 @@
+:root{
+  --max-page-width: 1400px;
+  --text-color: black;
+  --background-color: #fffaf9;
+  /* background-color: var(--background-color); */
+  /* --shadow-color: rgba(0, 0, 0, .50); */
+  --shadow-color: rgb(0, 0, 0);
+  /* var(--shadow-color); */
+  --shadow-color-dropdown: rgba(0, 0, 0, 0.5);
+  /* max-width: var(--max-page-width); */
+  --box-shadow-radius:  0.3rem;
+  --scroll-btn-background: rgb(110, 110, 110);
+}
+
+/* html{
+} */
+
+body {
+  /* background-color: #fffaf9; */
+  font-family: Cerebri Sans Book, sans-serif;
+  /* margin: 0 2rem; */
+  margin: auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overscroll-behavior: contain;
+  max-width: 1400px;
+  /* background-image: linear-gradient(to right,#00ffc8, rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,0,0,0), #00ffc8); */
+  /* box-shadow: 1rem 15px 150px 150px #00ffc8; */
+  /* outline: #00aeff solid 1000px; */
+  /* cool teal kinda color#00ffc8 */
+}
+
+h1 {
+  font-style: Bold;
+  font-size: 100;
+}
+h2 {
+  font-style: normal;
+}
+h2 a{
+  font-weight: bold;
+  color: var(----text-color);
+}
+div.dashed_items{
+  font-weight: bold;
+}
+
+p {
+  font-style: normal;
+}
+
+.flex{
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.darkmode{
+  --text-color: rgba(228, 228, 228, 0.952);
+  /* --background-color: rgb(56, 56, 61); */
+  --background-color: #222;
+  --social-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(454%) hue-rotate(356deg) brightness(84%) contrast(115%);
+  --shadow-color: rgba(0, 255, 255, 0.666);
+  --shadow-color-dropdown: rgba(0, 255, 255, 0.333);
+}
+
+.center_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid #555;
+}
+
+
+header{
+  display: grid;
+  grid-template-columns: auto auto;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
+  border-radius: 0 0 var(--box-shadow-radius) var(--box-shadow-radius);
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+ /* height: 10vh;*/
+}
+
+app-header-buttons{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle{
+  display: none;
+  filter: var(--social-filter);
+}
+
+.dark-mode-toggle{
+  z-index: 9999;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  align-items: center;
+  justify-items: right;
+  filter: var(--social-filter);
+}
+
+.primary-navigation{
+  position: relative;
+  list-style: none;
+  padding: 1rem 7vw 0 7vw ;
+  margin: 1rem 0;
+  box-shadow: 0 0 5px 0 var(--shadow-color);;
+  border-radius: var(--box-shadow-radius);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.primary-navigation a{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* .primary-navigation a:hover{
+  text-decoration: underline var(--text-color);
+} */
+
+.primary-navigation li a::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: rgb(0, 183, 255);
+  display: block;
+  position: relative;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.primary-navigation li a:hover::after{
+  opacity: 1;
+  z-index: 99;
+}
+
+/* .dropbtn {
+  background-color: #f9f9f9;
+  color: #0f0f0f;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+} */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--background-color);
+  /* box-shadow: 0px 13px 5px 0px var(--shadow-color); */
+  box-shadow: 2px 2px 1px var(--shadow-color-dropdown), -2px 2px 1px var(--shadow-color-dropdown);
+  border-radius: 0 0 var(--box-shadow-radius) var(--box-shadow-radius);
+  z-index: 90;
+  max-height: 0;
+  min-width: 100px;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  /* This is the new added section to align the drop down on the right. */
+  text-align:center!important;
+}
+
+.dropdown-content a {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+
+/*  copy of the underline test for dropdown only
+.dropdown-content a::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: rgb(0, 183, 255);
+  display: block;
+  position: relative;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.dropdown-content a:hover::after{
+  opacity: 1;
+  z-index: 99;
+} */
+
+/* .dropdown-content a:hover {
+  background-color: #e2e2e2;
+} */
+
+.dropdown:hover .dropdown-content {
+  max-height: 500px;
+  min-width: 160px;
+  transition: max-height 0.3s ease-in;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  transition: max-height 0.25s ease-in;
+} */
+
+main{
+display: grid;
+/* grid-template-columns: 6fr 1fr; */
+margin-bottom: 1rem;
+}
+/* article{
+  max-width: 80vw;
+} */
+
+.media-scroller {
+  --spacer: 1rem;
+  display: grid;
+  gap: var(--spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 45%;
+  margin: 1rem 0 0 0;
+  /* padding: 0 var(--spacer) var(--spacer); */
+  padding: var(--spacer);
+  overflow-x: auto;
+  overflow: auto;
+  overscroll-behavior-inline: contain;
+  max-width: 100%;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
+  border-radius: var(--box-shadow-radius);
+}
+
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  /* gap: var(--spacer); */
+  /* padding: var(--spacer); */
+  /* background: var(--spacer); */
+  border-radius: var(--spacer);
+  box-shadow: var(--spacer);
+}
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.side-bar{
+padding-top: 2rem;
+box-shadow: 0 0 5px 0 var(--shadow-color);
+border-radius: var(--box-shadow-radius);
+}
+.side-bar ul {
+  list-style-type: none;
+  /* padding: 0; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer{
+  box-shadow: 0 0 5px 0 var(--shadow-color);
+  border-radius: var(--box-shadow-radius) var(--box-shadow-radius) 0 0;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1em;
+  max-height: fit-content;
+}
+footer a{
+  color: var(----text-color);
+  font-size: 1rem;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline var(--text-color);
+}
+
+.social-links{
+  text-align: center;
+  filter: var(--social-filter);
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--scroll-btn-background);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10rem;
+  box-shadow: 0 0 5px 0 var(--shadow-color);
+}
+#scrollBtn > img {
+  display:block;
+}
+#scrollBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 23em){
+  body{
+    padding: 0 0.5em;
+  }
+}
+/* This layout gets used when the device viewed on is less than 35em wide */
+@media (max-width: 35em){
+  header{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: transparent;
+    background-image: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header_image{
+    display: none;
+  }
+
+  .primary-navigation{
+    --gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    margin: 0;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    justify-content: start;
+    padding: min(30vh, 6rem) 2rem;
+    background: rgb(145, 145, 145);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    box-shadow: none;
+  }
+
+/* Just incase a browser doesn't support backdrop filters the standard is shown above. This is for if it is supported. */
+  @supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation{
+      background: rgba(145, 145, 145, 0.1);
+      backdrop-filter: blur(1rem);
+      -webkit-backdrop-filter: blur(1rem); /* Add this line first, it fixes blur for Safari*/
+    }
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle{
+    z-index: 9999;
+    color: var(--text-color);
+    background-color: transparent;
+    border: 0;
+    display: block;
+    cursor: pointer;
+  }
+
+  main{
+    display: block;
+    }
+  .side-bar{
+    display: none;
+    }
+  .media-scroller {
+    padding: 1rem;
+    grid-auto-columns: 85%;
+    }
+  .media-element {
+    gap: 0;
+  }
+}
+
+/* @media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(56, 56, 61);
+    color: var(--dark-mode-white);
+  }
+  .primary-navigation a{
+    color: var(--dark-mode-white);
+  }
+  .primary-navigation a:hover{
+    text-decoration: underline var(--dark-mode-white);
+  }
+} */
