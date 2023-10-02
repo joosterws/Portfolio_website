@@ -1,5 +1,8 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
+const darkModeBtn = document.querySelector('.dark-mode-toggle');
+const menuBtn = document.querySelector('.mobile-nav-toggle');
+
 
 // Make primaryNav focusable
 primaryNav.setAttribute('tabindex', '-1');
@@ -7,7 +10,7 @@ primaryNav.setAttribute('tabindex', '-1');
 // Handle blur once, outside the click event
 primaryNav.addEventListener('blur', (event) => {
     // Check if the newly focused element is inside primaryNav
-    if (primaryNav.contains(event.relatedTarget)) {
+    if (primaryNav.contains(event.relatedTarget) || darkModeBtn.contains(event.relatedTarget) || menuBtn.contains(event.relatedTarget)){
         return;
     }
 
