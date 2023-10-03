@@ -240,6 +240,23 @@ margin-bottom: 1rem;
   object-fit: cover;
 }
 
+
+input[type=text], select{
+  width: 70%;
+
+}
+input[type=email], select{
+  width: 70%;
+
+}
+
+
+textarea{
+  width: 70%;
+}
+
+
+
 .side-bar{
 padding-top: 2rem;
 box-shadow: 0 0 5px 0 var(--shadow-color);

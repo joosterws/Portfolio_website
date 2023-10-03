@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joost Sluijmer</title>
+    <link rel="icon" href="/images\Tab-Icons\JS-icon.png"/>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts/Reuse.js"></script>
+    <!-- <script src="/scripts/Navigation.js"></script>
+    <script src="/scripts/Sidebar.js"></script>
+    <script src="/scripts/HeaderButtons.js"></script>
+    <script src="/scripts/Footer.js"></script> -->
+    <script src="/scripts/mobile-nav-button.js" defer></script>
+    <script src="/scripts/darkmode.js" defer></script>
+    <script src="/scripts/ScrollToTopBtn.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Contact form in DB</h1>
+        </div>
+        <app-header-buttons></app-header-buttons>
+    </header>
+    
+    <!-- Navigation bar: For the same navbar on all pages.-->
+    <nav>
+        <app-navbar></app-navbar>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <form id="contact-form">
+                    <p><label for="contact-name">Name:</label><br>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="Your Name..." required></p>
+                    
+                    <p><label for="contact-email">E-mail:</label><br>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your E-mail..."></p>
+                    
+                    <p><label for="contact-message">Message:</label>
+                    <div><textarea id="message" name="contact-message" rows="4" placeholder=""></textarea></div></p>
+                    
+                    <p><button type="submit">Submit</button></p>
+                </form>
+                <div id="response"></div>
+            </div>
+        </section>
+        <!-- <div class="side-bar">
+            <app-sidebar></app-sidebar>
+        </div> -->
+
+    </main>
+
+    <ScrollBtn>
+        <app-scrolltotopbtn></app-scrolltotopbtn>
+    </ScrollBtn>
+    
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+
+</body>
+</html>
