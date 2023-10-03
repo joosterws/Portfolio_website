@@ -15,6 +15,7 @@
     <script src="/scripts/mobile-nav-button.js" defer></script>
     <script src="/scripts/darkmode.js" defer></script>
     <script src="/scripts/ScrollToTopBtn.js" defer></script>
+    <!-- <script src="/scripts/contact.js" defer></script> -->
 </head>
 
 <body>
@@ -32,19 +33,19 @@
 
     <main>
         <section id="contact">
-            <div class="container">
+            <div class="contact-form">
                 <h1>Contact Me</h1>
                 <form id="contact-form">
-                    <p><label for="contact-name">Name:</label><br>
-                    <input type="text" id="contact-name" name="contact-name" placeholder="Your Name..." required></p>
-                    
-                    <p><label for="contact-email">E-mail:</label><br>
-                    <input type="email" id="contact-email" name="contact-email" placeholder="Your E-mail..."></p>
-                    
-                    <p><label for="contact-message">Message:</label>
-                    <div><textarea id="message" name="contact-message" rows="4" placeholder=""></textarea></div></p>
-                    
-                    <p><button type="submit">Submit</button></p>
+                    <label for="contact-name">Name:</label><br>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="Your name..." required>
+                    <br><br>
+                    <label for="contact-email">E-mail:</label><br>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="Your E-mail...">
+                    <br><br>
+                    <label for="contact-message">Message:</label><br>
+                    <textarea id="message" name="contact-message" rows="4" placeholder="Your message..."></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
                 </form>
                 <div id="response"></div>
             </div>

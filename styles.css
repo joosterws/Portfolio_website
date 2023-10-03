@@ -55,6 +55,7 @@ div.dashed_items{
 
 p {
   font-style: normal;
+  width: fit-content;
 }
 
 .flex{
@@ -241,18 +242,22 @@ margin-bottom: 1rem;
 }
 
 
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 input[type=text], select{
-  width: 70%;
+  width: calc(40% - 8px);
 
 }
 input[type=email], select{
-  width: 70%;
-
+  width: calc(40% - 8px);
 }
-
-
 textarea{
-  width: 70%;
+  width: calc(80% - 8px);
 }
 
 
