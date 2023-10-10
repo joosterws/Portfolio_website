@@ -21,7 +21,7 @@ primaryNav.addEventListener('blur', (event) => {
 });
 
 
-navToggle.addEventListener('click', () => {
+navToggle.addEventListener('click', (event) => {
     const hidden = primaryNav.getAttribute('nav-visible');
     if (hidden === "false") {
         primaryNav.setAttribute("nav-visible", "true"); 
