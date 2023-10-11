@@ -1,35 +1,51 @@
 <?php
-// Database connection settings
-$host = 'localhost:3306';
-$username = 'root';
-$password = '';
-$database = 'db_contact';
+// // Database connection settings
+// $host = 'localhost';
+// $username = 'root';
+// $password = '';
+// $dbname = 'db_contact';
 
-// Create a database connection
-$conn = mysqli_connect($host, $username, $password, $database);
+// // Create a database connection
+// $conn = mysqli_connect($host, $username, $password, $dbname);
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+// // Check connection
+// if (!$conn) {
+//     // die("Connection failed: " . mysqli_connect_error());
+//     echo "test0";
+// }
+// echo "test1";
+// // Process form data
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $first_name = $_POST["contactFirstname"];
+//     $last_name = $_POST["contactLastName"];
+//     $email = $_POST["contactEmail"];
+//     $message = $_POST["contactMessage"];
+//     echo "test2";
 
-// Process form data
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $first_name = $_POST["contactFirstname"];
-    $last_name = $_POST["contactLastName"];
-    $email = $_POST["contactEmail"];
-    $message = $_POST["contactMessage"];
 
-    // Insert data into the database
-    $sql = "INSERT INTO contact_form (contactFirstname, contactLastName, contactEmail, contactMessage) VALUES ('$first_name', '$last_name', '$email', '$message')";
 
-    if (mysqli_query($conn, $sql)) {
-        echo "Form submitted successfully!";
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+//     // Insert data into the database
+//     $sql = "INSERT INTO contact-form (first_name, last_name, email, message) VALUES ('$first_name', '$last_name', '$email', '$message')";
 
-    // Close the database connection
-    mysqli_close($conn);
-}
+//     if (mysqli_query($conn, $sql)) {
+//         echo "Form submitted successfully!";
+//     } else {
+//         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+//     }
+//     echo "test3";
+
+//     // Close the database connection
+//     mysqli_close($conn);
+// }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
