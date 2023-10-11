@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
-$host = 'locahost';
+$host = 'localhost:3306';
 $username = 'root';
 $password = '';
-$database = 'DB_contact';
+$database = 'db_contact';
 
 // Create a database connection
 $conn = mysqli_connect($host, $username, $password, $database);
