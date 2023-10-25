@@ -11,16 +11,17 @@ $conn = mysqli_connect($host, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     // die("Connection failed: " . mysqli_connect_error());
-    echo "test0";
+    // echo "test0";
 }
 echo "test1";
+echo"";
 // Process form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $first_name = $_POST["contactFirstname"];
+    $first_name = $_POST["contactFirstName"];
     $last_name = $_POST["contactLastName"];
     $email = $_POST["contactEmail"];
     $message = $_POST["contactMessage"];
-    echo "test2";
+    // echo "test2";
 
 
 
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    echo "test3";
+    // echo "test3";
 
     // Close the database connection
     mysqli_close($conn);
