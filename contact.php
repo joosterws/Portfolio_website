@@ -13,8 +13,7 @@ if (!$conn) {
     // die("Connection failed: " . mysqli_connect_error());
     // echo "test0";
 }
-echo "test1";
-echo"";
+// echo "test1";
 // Process form data
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $first_name = $_POST["contactFirstName"];

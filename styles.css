@@ -202,13 +202,23 @@ nav{
 
 
 main{
-display: grid;
-/* grid-template-columns: 6fr 1fr; */
-margin-bottom: 1rem;
+  display: grid;
+  /* grid-template-columns: 6fr 1fr; */
+  margin-bottom: 1rem;
 }
 /* article{
   max-width: 80vw;
 } */
+
+.zigzag-article-text-left{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+.zigzag-article-text-right{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
 
 
 .media-scroller {
