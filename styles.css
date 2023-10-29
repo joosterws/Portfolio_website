@@ -216,7 +216,8 @@ main{
 }
 .zigzag-article-text-left img{
   grid-column: 2/2;
-  width: 33vw;
+  max-width: 33vw;
+  max-height: 50vh;
 }
 
 
