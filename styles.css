@@ -212,12 +212,13 @@ main{
 
 .zigzag-article-text-left{
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
-.zigzag-article-text-right{
-  display: grid;
-  grid-template-rows: 1fr 2fr;
+.zigzag-article-text-left img{
+  grid-column: 2/2;
+  width: 33vw;
 }
+
 
 
 
@@ -368,6 +369,17 @@ footer a:hover{
 
   .primary-navigation li a::after{
     display: none;
+  }
+  
+  .zigzag-article-text-left{
+    display: block;
+    grid-template-columns: none;
+    grid-template-rows: 2fr 1fr;
+  }
+  .zigzag-article-text-left img{
+    grid-column: 2/2;
+    max-width: 33vw;
+    max-height: 50vh;
   }
 
 /* Just incase a browser doesn't support backdrop filters the standard is shown above. This is for if it is supported. */
