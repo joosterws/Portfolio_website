@@ -23,8 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["contactMessage"];
     // echo "test2";
 
-
-
     // Insert data into the database
     $sql = "INSERT INTO contactform (first_name, last_name, email, message) VALUES ('$first_name', '$last_name', '$email', '$message')";
 
